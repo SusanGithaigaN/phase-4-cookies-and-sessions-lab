@@ -9,7 +9,7 @@ class ArticlesController < ApplicationController
   def show
     # set session initial value
     # +1 session value, for every click
-    # if user.view< 3
+    # if user.view< 3, render max page vie...
     session[:page_views] ||= 0
     session[:page_views] += 1
     
